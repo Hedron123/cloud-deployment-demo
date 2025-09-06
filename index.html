@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cloud VM WebApp — Aditya Maheshwari</title>
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa7b2;
+      --accent:#5eead4;
+      --accent-2:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --maxw:1000px;
+      --mono: "Segoe UI Mono", "Roboto Mono", monospace;
+      --sans: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:var(--sans);
+      background: linear-gradient(180deg, #071028 0%, #071426 50%, #0b1220 100%);
+      color: #e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:var(--maxw);
+      margin:36px auto;
+      padding:28px;
+      border-radius:18px;
+      background: linear-gradient(120deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+
+    .logo{
+      width:76px;
+      height:76px;
+      border-radius:12px;
+      background: linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#03202a;
+      box-shadow: 0 6px 20px rgba(9,30,63,0.45);
+      font-family:var(--mono);
+    }
+
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.2px;
+    }
+
+    .subtitle{
+      color:var(--muted);
+      margin-top:6px;
+      font-size:13px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:20px;
+      margin-top:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 4px 18px rgba(2,6,23,0.5);
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    .card h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:var(--glass);
+      padding:6px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+      margin-right:8px;
+    }
+
+    .info{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    
+
+    .btn{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#04222b;
+      border:none;
+      padding:10px 14px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:700;
+      box-shadow: 0 6px 18px rgba(53,214,188,0.08);
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .small{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    ul.steps{
+      padding-left:18px;
+      color:var(--muted);
+      margin:0;
+    }
+
+    footer{
+      margin-top:18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+
+    .meta{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .right{
+      text-align:right;
+    }
+
+    @media (max-width:920px){
+      .grid{ grid-template-columns: 1fr; }
+      .right{ text-align:left; margin-top:10px;}
+    }
+
+    /* small code box */
+    pre.cmd{
+      background: rgba(0,0,0,0.22);
+      padding:10px;
+      border-radius:8px;
+      overflow:auto;
+      color:#cdeef2;
+      font-family:var(--mono);
+      font-size:13px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">AMZ</div>
+      <div>
+        <h1>Cloud VM WebApp — Deployment & Hardening</h1>
+        <div class="subtitle">Simple college project demo — Amazon Linux EC2 + Nginx</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- MAIN LEFT -->
+      <div class="card">
+        <h2>Project Summary</h2>
+        <p class="info">
+          This web page demonstrates a basic cloud deployment: a static site hosted on an Amazon Linux EC2 instance running <strong>Nginx</strong>.
+          Minimal host hardening was applied (firewall, SSH restrictions, automatic updates). This page is the project's front-end placeholder and proof of deployment.
+        </p>
+
+        <hr style="border:none;height:1px;background:rgba(255,255,255,0.02);margin:12px 0 18px;">
+
+        <h2>How to reproduce (commands used)</h2>
+        <p class="small">Run these on the EC2 terminal as <code>ec2-user</code> (use <code>sudo</code> where shown)</p>
+
+        <pre class="cmd"># update packages
+
+        </pre>
+
+        <h2 style="margin-top:18px">Project Files</h2>
+        <ul class="steps">
+          <li><strong>index.html</strong> — this front-end file</li>
+          <li><strong>report/project-report.md</strong> — assignment report (create locally)</li>
+          
+        </ul>
+
+        <h2 style="margin-top:18px">What I did to harden</h2>
+        <ul class="steps">
+          <li>Enabled firewall (open only HTTP/HTTPS/SSH)</li>
+          <li>Disabled root SSH login and password authentication</li>
+          <li>Enabled automatic security updates</li>
+          <li>Installed fail2ban (optional) to block brute force</li>
+        </ul>
+
+        
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="card">
+        <h2>Quick Info</h2>
+
+        <div style="margin:10px 0;">
+          <div class="badge">Student</div>
+          <div class="badge">College Project</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Public IP</strong>
+          <div class="small" style="margin-top:6px;color:var(--muted)">13.201.0.56</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Web root</strong>
+          <div class="small" style="margin-top:6px;color:var(--muted)">/usr/share/nginx/html</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Live check</strong>
+          <div class="small" style="margin-top:6px;color:var(--muted)">curl -I http://localhost</div>
+        </div>
+
+        <hr style="border:none;height:1px;background:rgba(255,255,255,0.02);margin:12px 0;">
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="meta">
+        <div><strong>Created by:</strong> <span style="color:var(--accent)">Aditya Maheshwari</span></div>
+        <div class="small" style="margin-top:6px"><strong>Registration No:</strong> 229301363</div>
+      </div>
+
+      <div class="right small">
+        <div>Project: Cloud VM Web App</div>
+        <div style="margin-top:8px;color:var(--muted)">Date: <span id="today"></span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set date
+    document.getElementById('today').innerText = new Date().toLocaleDateString();
+
+    // copy commands helper
+    function copyCommands(){
+      const text = `sudo dnf update -y
+sudo dnf install -y nginx
+sudo systemctl enable --now nginx.service
+sudo dnf install -y firewalld
+sudo systemctl enable --now firewalld
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload`;
+      navigator.clipboard?.writeText(text).then(()=>{
+        alert('Commands copied to clipboard — paste into your EC2 terminal.');
+      }, ()=>{
+        alert('Copy not supported in this browser.');
+      });
+    }
+  </script>
+</body>
+</html>
