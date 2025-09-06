@@ -89,3 +89,11 @@ Open your browser.
 Enter your Public IP → http://<your-ec2-ip>
 
 You should see your custom page 🎉
+
+<img width="2880" height="1476" alt="Screenshot 2025-09-05 145236" src="https://github.com/user-attachments/assets/38d9dcea-6e1b-4681-8978-6de6d5e15da3" />
+
+<img width="2880" height="1478" alt="Screenshot 2025-09-05 145124" src="https://github.com/user-attachments/assets/0820801a-3d4d-4217-b3bf-1bd43980bad8" />
+
+<img width="2880" height="1476" alt="Screenshot 2025-09-05 145053" src="https://github.com/user-attachments/assets/17a2fdf1-46b0-44d5-8d55-004e971e9c03" />
+
+<img width="2880" height="1480" alt="Screenshot 2025-09-05 145027" src="https://github.com/user-attachments/assets/629d1eaf-3f5f-4e80-8fe1-cc43f5cfeb63" />
