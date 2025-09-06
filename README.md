@@ -48,7 +48,7 @@ ssh -i my-key.pem ec2-user@<your-public-ip>
 
 ---
 
-###3️⃣ Install and Start Nginx
+### 3️⃣ Install and Start Nginx
 Run the following commands:
 
 bash
@@ -83,7 +83,7 @@ Save and exit.
 
 ---
 
-###5️⃣ Access the Web Application
+### 5️⃣ Access the Web Application
 Open your browser.
 
 Enter your Public IP → http://<your-ec2-ip>
