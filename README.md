@@ -45,7 +45,10 @@ The project also covers basic **infrastructure setup, deployment, and security h
 Use SSH from your local terminal:
    bash
 ssh -i my-key.pem ec2-user@<your-public-ip>
-3️⃣ Install and Start Nginx
+
+---
+
+###3️⃣ Install and Start Nginx
 Run the following commands:
 
 bash
@@ -60,7 +63,10 @@ Verify Nginx is running:
 bash
 Copy code
 systemctl status nginx
-4️⃣ Deploy the HTML Web Page
+
+---
+
+### 4️⃣ Deploy the HTML Web Page
 Go to the default Nginx directory:
 
 bash
@@ -75,7 +81,9 @@ Paste your HTML code (with colors, name, and registration number).
 
 Save and exit.
 
-5️⃣ Access the Web Application
+---
+
+###5️⃣ Access the Web Application
 Open your browser.
 
 Enter your Public IP → http://<your-ec2-ip>
